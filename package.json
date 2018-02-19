@@ -1,0 +1,21 @@
+{
+  "name": "oshou-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon -e ts -w src/*.ts -x npm run watch:serve",
+    "watch:serve": "tsc --outDir dist && node --inspect dist/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.15.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^9.4.6",
+    "nem-sdk": "^1.6.4"
+  }
+}
