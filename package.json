@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc --outDir dist",
     "watch": "nodemon -e ts -w src/*.ts -x npm run watch:serve",
     "watch:serve": "tsc --outDir dist && node --inspect dist/*.js"
   },
